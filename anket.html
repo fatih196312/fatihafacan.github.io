@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anket - Türk Futbolu Blogu</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navigasyon Menüsü -->
+    <nav>
+        <ul>
+            <li><a href="index.html">Ana Sayfa</a></li>
+            <li><a href="hakkimda.html">Hakkımda</a></li>
+            <li><a href="anket.html">Anket</a></li>
+            <li><a href="iletisim.html">İletişim</a></li>
+        </ul>
+    </nav>
+
+    <header>
+        <h1>Anket: Türk Futbolunda Görüşlerinizi Paylaşın</h1>
+    </header>
+
+    <!-- Anket İçeriği -->
+    <section class="survey">
+        <form>
+            <!-- Takım Seçimi -->
+            <label for="team">Favori Futbol Takımınızı Seçin:</label><br>
+            <select id="team" name="team">
+                <option value="galatasaray">Galatasaray</option>
+                <option value="fenerbahce">Fenerbahçe</option>
+                <option value="besiktas">Beşiktaş</option>
+                <option value="trabzonspor">Trabzonspor</option>
+                <option value="diger">Diğer</option>
+            </select>
+            <br><br>
+
+            <!-- Takımı Destekleme Nedeni -->
+            <label for="opinion">Bu takımı neden destekliyorsunuz?</label><br>
+            <textarea id="opinion" name="opinion" rows="4" cols="50" placeholder="Destekleme nedenlerinizi buraya yazın..."></textarea>
+            <br><br>
+
+            <!-- Favori Futbolcu -->
+            <label for="favoritePlayer">Türk futbolundaki favori oyuncunuz kim?</label><br>
+            <input type="text" id="favoritePlayer" name="favoritePlayer" placeholder="Favori futbolcunuzu yazın...">
+            <br><br>
+
+            <!-- Türk Futbolunun Geleceği Hakkında -->
+            <label for="future">Türk futbolunun geleceği hakkında ne düşünüyorsunuz?</label><br>
+            <textarea id="future" name="future" rows="4" cols="50" placeholder="Düşüncelerinizi buraya yazın..."></textarea>
+            <br><br>
+
+            <!-- Süper Lig Görüşleri -->
+            <label>Süper Lig'in seviyesi hakkında ne düşünüyorsunuz?</label><br>
+            <input type="radio" id="superLigGood" name="superLigLevel" value="iyi">
+            <label for="superLigGood">İyi</label><br>
+            <input type="radio" id="superLigAverage" name="superLigLevel" value="ortalama">
+            <label for="superLigAverage">Ortalama</label><br>
+            <input type="radio" id="superLigPoor" name="superLigLevel" value="kötü">
+            <label for="superLigPoor">Kötü</label><br><br>
+
+            <!-- Yerli mi, Yabancı mı? -->
+            <label>Türk futbolunda yerli mi yoksa yabancı oyuncular mı daha etkili?</label><br>
+            <input type="radio" id="localPlayers" name="playerEffect" value="yerli">
+            <label for="localPlayers">Yerli</label><br>
+            <input type="radio" id="foreignPlayers" name="playerEffect" value="yabancı">
+            <label for="foreignPlayers">Yabancı</label><br><br>
+
+            <button type="submit">Gönder</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>© 2024 Türk Futbolu Blogu</p>
+    </footer>
+</body>
+</html>
