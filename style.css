@@ -1,19 +1,15 @@
 body {
     font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
     margin: 0;
     padding: 0;
-}
-
-nav {
-    background-color: #3d5a80;
-    text-align: center;
+    background-color: #f4f4f4;
 }
 
 nav ul {
-    list-style-type: none;
-    margin: 0;
+    list-style: none;
     padding: 0;
+    margin: 0;
+    background-color: #333;
 }
 
 nav ul li {
@@ -22,80 +18,31 @@ nav ul li {
 }
 
 nav ul li a {
-    text-decoration: none;
     color: white;
-    font-weight: bold;
+    text-decoration: none;
+    padding: 10px 15px;
+    display: inline-block;
 }
 
 header {
-    background-color: #3d5a80;
+    background-color: #444;
     color: white;
+    padding: 10px 0;
     text-align: center;
-    padding: 20px;
 }
 
-h1 {
-    margin: 0;
-}
-
-.blog-content, .about-me, .survey, .contact-form {
-    max-width: 800px;
-    margin: 20px auto;
+section {
     padding: 20px;
+    margin: 20px;
     background-color: white;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
-h2 {
-    color: #3d5a80;
-}
-
-p {
-    line-height: 1.6;
 }
 
 footer {
     text-align: center;
-    padding: 20px;
-    background-color: #3d5a80;
+    padding: 10px 0;
+    background-color: #333;
     color: white;
-}
-
-.about-me {
-    background-color: #e0fbfc;
-}
-
-.survey {
-    background-color: #edf2f4;
-}
-
-.contact-form {
-    background-color: #fff5f5;
-}
-
-form {
-    margin-top: 10px;
-}
-
-label {
-    font-weight: bold;
-}
-
-input, select, textarea, button {
-    margin-top: 10px;
-    padding: 10px;
+    position: fixed;
     width: 100%;
-    max-width: 400px;
-}
-
-button {
-    background-color: #3d5a80;
-    color: white;
-    border: none;
-    cursor: pointer;
-    transition: background-color 0.3s;
-}
-
-button:hover {
-    background-color: #293241;
+    bottom: 0;
 }
